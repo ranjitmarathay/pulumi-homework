@@ -13,7 +13,7 @@ def lambda_handler(event, context):
 
     response = s3.get_object(Bucket=bucket, Key=key)
 
-    print(response)
+    # print(response)
     
     last_modified = response['LastModified']
     last_modified_str = last_modified.strftime('%Y-%m-%d %H:%M:%S')
